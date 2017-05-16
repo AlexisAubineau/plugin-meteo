@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>tp plugin meteo</title>
+    <meta charset="UTF-8" />
+    <script src="js/jquery.js"></script>
+    <script src="js/meteo.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<div class="meteo"></div>
+<div class="meteo" id="meteo2"></div>
+<script>
+    $(document).ready(function(){
+        $(".meteo").meteoPlugin({ top : 150, left: 50});
+        $("#meteo2").meteoPlugin({ top : 150, left : 550});
+    });
+
+    $( function() {
+        $( "#meteo2" ).draggable();
+    } );
+
+</script>
+</body>
+</html>
